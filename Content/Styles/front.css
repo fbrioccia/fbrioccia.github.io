@@ -1,0 +1,268 @@
+*{padding: 0; margin: 0;}
+.bg-img{
+  /*full bg img*/
+  width: 100%;
+  height: 100vh;
+/*   background: #ffa949 url('http://wallpaper.pickywallpapers.com/1920x1080/pine-trees-near-mountain-lake.jpg') no-repeat center;
+  background-size: cover; */
+  
+  /*gradient bg*/
+  /*background-image: linear-gradient(green, blue);*/
+  /*background-image: radial-gradient(circle at top, green, blue);*/
+  /*background-image: radial-gradient(circle at top, green, cornflowerblue, blue); */
+  
+  /*bg img w/ gradient overlay*/
+  background: linear-gradient(to top, #095763, transparent 50%),
+    linear-gradient(#668340, transparent 50%),
+              #ffa949 url("../Images/indexBackground.jpg") no-repeat center;
+  overflow: hidden;
+  background-size: cover;
+}
+
+
+body {
+  width: auto;
+  margin: 0 auto;
+  color:white;
+}
+
+img {
+    height: 90%;
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    padding-top: 2.5%;
+}
+
+header {
+	width: 800px;
+	position: relative;
+}
+
+ul {
+    font-size: 50px;
+    font-family: Futura, Helvetica, sans-serif;
+	font-weight: bold;
+	text-transform: lowercase;
+	overflow: hidden;
+	list-style: none;
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+h3{
+    font-size: 40px;
+    font-family: Futura, Helvetica, sans-serif;
+	font-weight: bold;
+	text-transform: lowercase;
+	overflow: hidden;
+	position: relative;
+    margin: 0 auto;
+}
+
+li {
+	float: left;
+    border-color: transparent;
+    border-style: solid;
+    border-left: 0;
+    border-right: 0;
+}
+
+a {
+	display: block;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+	padding: 0 20px;
+	color: white;
+	text-decoration: none;
+}
+
+.navBar {
+    width:640px;
+    margin:0 auto;
+}
+
+.top-div{
+    height: 30%;
+}
+
+.top-div li a{
+    display: none;   
+}
+
+.bottom-div{
+    height: 35%;
+    margin-top: 5%;
+    overflow: hidden;
+}
+
+li:hover {
+    border-color:white;
+
+}
+
+.bg-img .left-div{
+    width:33%;
+    float: left;
+}
+
+.right-div{
+    width:40%;
+    float: left;
+}
+
+.central-div{
+    width:760px;
+    margin:0 auto;
+    visibility: hidden;
+}
+
+.central-div > div{
+    width:100%;
+    height:100%
+}
+
+.cv-photo{
+    max-height: 220px;
+    width: 100%;
+    height: 50%;
+    border-right: 0;
+    border-color: white;
+    border-style: solid;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 1px;
+    min-height: 170px;
+}
+
+.cv-left{
+    width: 30%;
+    border-right: 1px;
+    border-color: white;
+    border-style: solid;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 0;
+    height: 100%;
+    float: left;
+}
+
+.cv-right{
+    width: 60%;
+    height: 100%;
+    float: left;
+}
+
+.cv-photoText{
+    margin: 35px;
+
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+.separator{
+    border: 1px;
+    border-style: solid;
+    width: 300%;
+    border-color: white;
+    border-top: 0;
+}
+
+.cv-close{
+    background: url("../Images/close-button2.png") no-repeat left top;
+    width: 20px;
+    height: 20px;
+    float: right;
+    background-size: contain;
+}
+
+.cv-body {
+    margin: 20px;
+}
+
+.cv-div {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bold{
+    font-weight: bold;
+}
+
+@media (max-width: 1200px){
+    ul {
+        font-size: 30px;
+    }
+    a {
+        height: 40px;
+        line-height: 40px;
+    }   
+}
+
+@media (min-width : 950px) and (max-width : 1024px) {
+    .cv-left {
+        width: 0;
+        border: 0;
+    }
+    
+     .cv-right {
+        width: 100%;
+        overflow: auto;
+        padding-right: 100%;
+    }
+    
+    .central-div > div {
+        width: 70%;
+        margin-top: 50px;
+    }
+    .central-div {
+        width: 760px;
+        margin: 0 25% auto;
+    }
+}
+
+@media (min-width : 0px) and (max-width : 949px) {
+  ul {
+        font-size: 50px;
+    } 
+    .cv-left {
+        width: 0;
+        border: 0;
+    }
+    
+    .cv-right {
+        width: 100%;
+        overflow: auto;
+        padding-right: 100%;
+    }
+
+    .central-div > div {
+        width: 100%;
+        margin-top: 50px;
+    }
+    
+    .central-div {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    a {
+        height: 70px;
+    }
+    ul {
+        font-size: 50px;
+        width: 100%;
+    }
+    li {
+	    float: none;
+    }
+    .top-div{
+        height: 30%;
+    }
+    li:hover {
+        border-color: transparent;
+    }
+}
