@@ -1,0 +1,133 @@
+body {
+	margin:0;
+	padding:0;
+	color:#000;
+	background:#fff;
+	font:1em/1.2 helvetica,arial,sans-serif
+}
+h1 {
+	margin:0;
+	font-size:1.5em;
+	font-weight:500
+}
+h2,h3 {
+	margin:0 0 1em;
+	font-size:1.3em;
+	font-weight:500
+}
+
+.container {
+	max-width:51em;
+	margin:0 auto
+}
+.header {
+	padding:1em
+}
+.nav-bar {
+	color:#fff;
+	background-color:#000
+}
+.content {
+	padding:1em
+}
+.main {
+	margin-bottom:1em
+}
+.aside {
+	margin-bottom:1em
+}
+.footer {
+	clear:both;
+	padding:1em;
+	background-color:#ccc
+}
+.nav {
+	margin:0;
+	padding:0;
+	list-style:none
+}
+.nav li {
+	display:inline;
+	margin:0
+}
+.nav a {
+	display:block;
+	padding:0.7em 1.25em;
+	color:#fff;
+	text-decoration:none;
+	border-bottom:1px solid gray
+}
+.nav a:link {
+	color:#fff
+}
+.nav a:visited {
+	color:#fff
+}
+.nav a:focus {
+	color:orange;
+	font-weight: bolder;
+}
+.nav a:hover {
+	color:orange;
+	font-weight: bolder;
+}
+.nav a:active {
+	color:#fff;
+	background-color:red
+}
+
+.photo{
+    max-width: 100%;
+    max-height: 100%;
+}
+.fixed{
+    width: 200px;
+}
+.flex-item{
+    flex-grow: 1;
+}
+.doublediv{
+    display: flex;
+}
+
+@media (min-width:800px) {
+	.header {
+		padding:1em 5%
+	}
+	.nav-bar {
+		padding:1em 5%
+	}
+	.nav li {
+		display:inline;
+		margin:0 1em 0 0
+	}
+	.nav a {
+		display:inline;
+		padding:0;
+		border-bottom:0
+	}
+	.content {
+		overflow:hidden;
+		padding:2em 0 1em
+	}
+	.main {
+		float:left;
+		width:32em;
+		margin:0 2em 1em 2em
+	}
+	.aside {
+		float:left;
+		width:13em;
+		margin-bottom:1em
+	}
+	.footer {
+		padding:1em 5%
+	}
+   
+}
+
+@media (max-width:800px) {
+     img{
+       display: none;
+    }
+}
